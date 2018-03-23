@@ -1,0 +1,44 @@
+/* ----  Media Settings --------------------------------- */
+
+@media (max-width: 1024px) {
+	ul.ecc_members_cats ul.children li {
+		width: 49%;
+	}
+}
+@media (min-width: 768px) { //vertical tablet
+
+}
+@media (max-width: 768px) { //vertical tablet
+
+}
+
+@media only screen and (max-width: 600px) {// point at which top bar hides
+	.ecc-mobile-only,
+	// show phone nubmer at top (inplace of top bar)
+	.ecc-top-phone {
+		display:block!important;
+	}
+
+	h1 {
+		font-size: 22px; //Smaller H1s on mobile devices
+	}
+
+}
+
+@media (max-width: 480px) {
+	ul.ecc_members_cats ul.children li {
+		width: 100%;
+	}
+
+	img.alignright, img.alignleft {
+		width: 100%;
+	}
+}
+
+@media (min-width: 481px) {
+	.car-show-sponsors {
+		column-count: 3;
+	}
+}
+
+/* end Media Settings ------------------------------------------ */

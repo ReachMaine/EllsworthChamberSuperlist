@@ -1,0 +1,61 @@
+/* ----  ecc  --------------------------------- */
+// styling for the category listings of members 
+ul.ecc_members_cats {
+	li {
+		list-style: none;
+	}
+	> li { 
+		//list-style: none;
+
+		background-color: #e7e7e7;
+		width: 28%;
+		float: left;
+		padding: 1%;
+		margin: 1%;
+		> a {
+			color: orange;
+			font-size: large;
+		}
+		ul.children {
+			
+		}
+		
+	}
+}
+// li.categories { ... }  /* outermost list item */
+// li.cat-item { ... }
+// li.cat-item-7 { ... }  /* category ID #7, etc */
+// li.current-cat { ... }
+// li.current-cat-parent { ... }
+// ul.children { ... }
+
+// styling for ecc_featured_list short code 
+// stacked template
+
+.ecc-listing-feat-list-holder.ecc-stacked { 
+	article {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		.eltd-listing-feat-listing-item-inner {
+			.eltd-listing-feat-image-holder {
+				text-align: center;
+			}
+			.eltd-listing-feat-title-wrapper {
+				.eltd-listing-feat-title {
+					text-align: center;
+					margin-top: 0px;
+					font-size: 1.1em;
+					//color: #fff;
+					//text-shadow: 2px 2px 1px black;
+				}
+			}
+			
+		}
+	}
+	.ecc-listing-feat-heading {
+		text-align: center;
+	}
+}
+
+/* end ecc ------------------------------------------ */

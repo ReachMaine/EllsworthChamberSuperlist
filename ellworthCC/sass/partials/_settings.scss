@@ -1,0 +1,76 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #a62425;
+$titleFontColor: #a62425;
+
+// Background colors:
+
+$bkgoundContent: #FFFFFF; //
+$menuBarbkg: #D14719; //
+$theme-highlight: #1ab5c1;
+$calendar-highlight: #206177;
+$ecc-separator: #a7a7a7;
+$search-buttons-background: rgba(26, 181, 193,0.8); // rgba( 0, 0, 0, .7);
+$transparent_white: rgba(255, 255, 255, 0.9);
+/* Typography ------------------------------------------ */
+/* General */
+/* responsive video embed */
+.ea-responsive-container {
+	position: relative;
+	padding-bottom: 50.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 1em;
+	iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	}
+}
+.ecc-mobile-only {
+	display: none!important;
+}
+.ecc-hide-all {
+	display: none;
+}
+.ecc-blue-background.widget {
+	background-color: $theme-highlight;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	h4 {
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.75em;
+	}
+}
+
+.ecc-center-button {
+	width: 100%;
+	text-align: center;
+}
+.ecc-center {
+	text-align: center;
+}
+.center             { text-align: center; }
+.aligncenter        { margin: auto; text-align: center; margin-bottom: 22px; display: block !important;}
+.alignleft          { float: left; margin: 0px 30px 22px 0px;  }
+.alignright         { float: right; margin: 0px 0px 22px 30px; }
+
+.left               { float:left;  }
+.right              { float:right; }
+
+small               { font-size: 12px; line-height: 14px; }
+strong              { }
+b                   { font-weight: bold; }
+
+.normal             { font-weight: normal; }
+.hidden             { display: none; }
+.wp-caption         { }
+.wp-caption-text    { }
+.sticky             { }
+.gallery-caption    { }
+.bypostauthor       { }

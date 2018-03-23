@@ -1,0 +1,59 @@
+/* team member styling */
+// three across 
+
+.team-members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.team-member {
+	width: 32%;
+	padding: 10px;
+	border: 1px solid #366897;
+	border-radius: 5px;
+	margin: 8px 0px;
+	.member { // title
+		margin: 5px 0px;
+		text-align: center;
+		line-height: 30px;
+	}
+	.role {
+		text-align: center;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+	.team-member-text {
+		
+	}
+	.author-details {
+		margin: 0px;
+	}
+}
+
+.team-member figure {
+	//float: left;
+	margin:0px 4px 0px 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.team-member img {
+	//border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+	.team-member {
+		// width: 95%;
+		figure {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 540px) {
+	.team-member {
+		width: 95%;
+	}
+}

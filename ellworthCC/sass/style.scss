@@ -1,0 +1,432 @@
+/*
+Theme Name: ellsworthCC
+
+Template: superlist
+Description: Directory WordPress Theme
+Version: 1.0.0
+Tags: two-columns, right-sidebar, featured-images, translation-ready
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+@import url("../search-and-go/style.css");
+
+@import "partials/settings";
+//@import "partials/ecc";
+@import "partials/eventOn";
+@import "partials/teammembers";
+@import "partials/testimonials.scss";
+
+/* **** header ***** */
+.ecc-top-phone {
+	display: none; // displayed at 600 px in _media.scss
+  background-color: black;
+	text-align:center;
+	font-size: 18px;
+	line-height:30px;
+	a {
+		color: white;
+	}
+}
+.eltd-position-right .eltd-login-register-widget {
+  padding-left: 0px; // zig 17Aug17
+
+  a.eltd-btn { //$transparent_white
+  	background-color: $transparent_white; // same as header nav
+    padding-left: 30px; // zig 17Aug17
+    padding-right: 30px; // zig 17Aug17
+  }
+}
+.eltd-position-right .widget_zlogin_widget {
+	display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.eltd-menu-area { // REVAMP menu area - 24 aug 17 zig
+	.eltd-vertical-align-containers {
+			.eltd-position-left {
+				z-index: 3;
+			}
+			.eltd-position-right {
+				float: none;
+				background-image: url(images/blue-bar.png);
+				margin-left: 30px;
+				ul#menu-main-menu {
+					li {
+						a {
+							color: #fff;
+							.item_outer {
+								background-color: initial;
+								.item_inner {
+
+								}
+							}
+						}
+					}
+				} // ul
+				.widget.eltd-login-register-widget {
+					 a.eltd-btn.eltd-login-opener,
+					 a.eltd-btn.eltd-login-opener:hover {
+						 background-color: inherit!important;
+						 border: 0px;
+					 }
+					 a.eltd-btn.eltd-login-opener {
+						 padding-top: 20px;
+						 padding-right: 10px;
+						 padding-left: 30px;
+						 font-size: 14px;
+						 .lnr-users,
+						 .eltd-btn-text {
+							 color: #fff!important;
+						 }
+
+					 }
+					 .eltd-mobile-login-icon {
+						 display: inline;
+						 i {
+						 	color: #fff!important;
+							padding-right: 10px;
+						}
+					 }
+				}
+			}
+		}
+}
+
+.ecc-listing-search-row { // row on front page with listing search & big background image
+		background-size: cover; // make background image cover the screen.
+}
+.eltd-parallax-section-holder.eltd-vertical-middle-align {
+	width: 100%; // firefox not handling the width calucation in modules.min.css
+	margin: 0px; // ditto
+}
+
+.eltd-header-standard .eltd-menu-area {
+	background-color: inherit;
+}
+
+// Content
+.eltd-overlapping-content a, .textwidget a p{
+  color: #1ab5c1;
+}
+
+.eltd-overlapping-content a:hover, .textwidget a:hover p{
+  color: darken( #1ab5c1, 30% ) ;
+}
+/* FOOTER */
+
+.eltd-footer-inner .textwidget {
+	color: white;
+}
+
+footer .eltd-footer-inner {
+	background-color: rgba(36, 36, 36, .45);
+}
+
+ul {
+	list-style-position: outside;
+	margin: 10px 0px 10px 35px;
+}
+
+ul.author-details {
+	list-style-position: inside;
+}
+
+/* HOMEPAGE */
+.eltd-logo-wrapper {
+  	background-color: inherit !important;
+	a img {
+	    -webkit-filter: drop-shadow(3px 3px 5px #333);
+	    filter: drop-shadow(3px 3px 5px #333);
+	}
+}
+
+.eltd-blog-list-item-inner { //Styling news items at bottom of homepage
+	padding: 13px;
+	background-color: #f5f5f5;
+	border-radius: 7px;
+	border: 2px solid #d6d6d6;
+
+}
+
+.eltd-drop-down .second .inner ul li a {
+	line-height: 20px;
+	padding: 7px 0px;
+}
+
+.eltd-listing-feat-list-holder article.eltd-listing-feat-listing-item .eltd-listing-feat-title-wrapper, .eltd-listing-item-related-holder .eltd-listing-related-image-holder .eltd-listing-related-title-holder {
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.eltd-listing-feat-list-holder article.eltd-listing-feat-listing-item .eltd-listing-feat-title-wrapper {
+	padding: 5px 10px;
+}
+
+.eltd-listing-feat-list-holder article .eltd-listing-feat-title {
+	text-shadow: 2px 2px 1px black;
+}
+
+/* Circular type buttons on homepage */
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	//background-color: rgba( 0, 0, 0, .7);
+	background-color: $search-buttons-background;
+}
+
+.eltd-custom-font-holder {
+	text-shadow: 2px 2px black;
+	background-color: rgba( 0, 0, 0, .4);
+	border-radius: 5px;
+}
+
+
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	.eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0px;
+	}
+	i, .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link span {
+		font-size: 27px;
+	}
+}
+
+
+/****** single listing ******/
+//header image
+.eltd-title .eltd-title-image img {
+	//width: inherit; commenting out to see if the header image scaling works better than cutting off left and right.
+	max-width: initial;
+}
+.eltd-title.eltd-has-background {
+	background-size: cover;
+}
+// content
+.eltd-single-listing {
+	.eltd-listing-title-holder {
+		.eltd-post-image {
+			display: table-cell;
+			width: 25%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 135px;
+		}
+		.eltd-listing-title-category {
+			padding-left: 10px;
+		}
+	}
+	.eltd-single-listing-inner {
+		.eltd-listing-single-map-holder {
+			.eltd-listing-map-address {
+				width: inherit;
+				max-width: 90%;
+				padding-left: 10px;
+				padding-right: 10px;
+				p {
+					color: #efefef;
+				}
+
+			}
+		}
+	}
+	.eltd-listing-image-gallery .eltd-gallery-arrow {
+		padding: 5px;
+   		background-color: $theme-highlight;
+	}
+
+}
+// featured listings on home page.
+.eltd-listing-feat-list-holder article {
+	.eltd-listing-feat-listing-item-inner {
+		text-align: center;
+		background-color: white;
+		border: 1px solid #e0e0e0;
+		.eltd-listing-feat-image-holder {
+			img {
+				height: initial!important;
+			}
+		}
+		.eltd-listing-feat-title-wrapper {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,757575+100&0+0,1+100 */
+			//background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(117,117,117,1) 100%); /* FF3.6-15 */
+			//background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(117,117,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			//background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(117,117,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#757575',GradientType=0 ); /* IE6-9 */
+
+			.eltd-listing-feat-title {
+				//text-shadow: 2px 2px 1px black;
+			}
+		}
+
+	}
+}
+
+
+/****** end single listing ******/
+
+.eltd-blog-list {
+	.eltd-blog-list-item {
+		.eltd-item-info-section {
+			.eltd-post-info-author {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/*  archive */
+.eltd-listing-list-items {
+	.eltd-listing-list-item {
+		.eltd-listing-item-image {
+			width: 20%;
+			background-size: contain;
+		}
+		.eltd-listing-item-content {
+			.eltd-listing-item-category-icons:after {
+				// hide the "/" after the categories
+				content: "";
+			}
+		}
+	}
+}
+// box style archive
+.eltd-blog-list-holder.eltd-boxes {
+	.eltd-item-text-holder {
+		padding-top: 0px;
+	}
+	.eltd-item-title {
+		text-align: center;
+	}
+}
+/* standard blog archive */
+.eltd-blog-holder.eltd-blog-type-standard {
+	padding-left: 0px;
+	padding-right: 0px;
+	article {
+		padding-top: 20px;
+		border-bottom: 1px solid $ecc-separator;
+		padding-bottom: 20px;
+		.eltd-post-title {
+			text-align: left;
+		}
+	}
+	article:first-child {
+		padding-top: 0px;
+	}
+
+}
+// single blog post
+
+.eltd-blog-holder.eltd-blog-single {
+	padding-left: 0px;
+	padding-right: 0px;
+	article {
+		.eltd-post-image {
+			// media file
+		}
+		.eltd-post-text .eltd-post-text-inner p:first-child {
+			margin-top: 0px;
+		}
+	}
+}
+// Category list page
+
+ul.ecc_members_cats > li {
+	width: 100%;
+	border-radius: 5px;
+}
+
+ul.ecc_members_cats ul.children li {
+	width: 32%;
+	font-weight: bold;
+	float: left;
+}
+
+ul.ecc_members_cats > li > a {
+	color: #1ab5c1;
+	font-weight: bold;
+}
+
+/* search page */
+.eltd-listing-list.eltd-advanced-search-holder {
+	.eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count {
+		height: inherit;
+	}
+
+	.eltd-listing-list-item {
+		height: inherit;
+	}
+}
+/* user dashboard */
+.eltd-listing-dashboard-holder-inner  {
+	.eltd-listing-empty-listings-holder {
+		a {
+			display: none;
+		}
+	}
+	.evcal_btn.evoau,
+	.evoau_submission_form.loginneeded .evcal_btn {
+		display: none;
+	}
+}
+
+/* menu */
+
+.eltd-main-menu>ul{
+	>li>a>span.item_outer {
+	background-color: $transparent_white;
+	border-radius: 5px;
+	margin: 5px;
+	}
+	>li>a span.item_inner {
+		padding: 0px 8px;
+	}
+	>li:last-child>a span.item_inner {
+		padding-right: 8px;
+	}
+}
+
+.eltd-main-menu>ul>li>a span.item_inner
+
+.eltd-btn.eltd-btn-outline, .eltd-login-register-widget .eltd-logged-in-user>span {
+	background-color: $transparent_white;
+}
+
+.eltd-logo-wrapper {
+	background-color: $transparent_white;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+/* Sticky Header */
+
+.eltd-page-header .eltd-sticky-header .eltd-main-menu>ul>li>a, .eltd-sticky-header .eltd-login-register-widget .eltd-logged-in-user>span {
+	color: black;
+}
+
+.eltd-main-menu.eltd-sticky-nav>ul>li:last-child>a span.item_inner {
+	padding-right: 8px;
+}
+
+/* Other Pages */
+
+.chowder-sponsors {
+	text-align: center;
+	img {
+	padding: 15px;
+	}
+}
+/* footer */
+.reach-logo {
+	color: white;
+}
+.reach-logo:hover {
+	color: #15708e;
+}
+.reach-logo:before {
+	content: url("images/reach-favicon.png");
+}
+
+@import "partials/media"; // keep at end of of file

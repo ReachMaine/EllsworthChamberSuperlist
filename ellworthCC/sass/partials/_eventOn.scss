@@ -1,0 +1,96 @@
+// eventOn styling
+	// image on card when expanded.
+	.evcal_evdata_img {
+    	background-repeat: no-repeat;
+    	background-size: contain;
+   }
+
+   // carosel (on homepage)
+	#homepage_carousel-map-canvas-full-event {
+		 // problem fixed.  can now showdisplay: none; // hide map on lightbox.
+	}
+ #homepage_carousel {
+
+ 	.eo_card_box {
+ 		.eo_card_img {
+ 			background-position: initial;
+    		background-size: contain;
+    		background-repeat: no-repeat;
+				background-position-x: 50%;
+ 		}
+ 		.eo_card_details_box { // dont show details on home page.
+	 		display: none;
+	 	}
+	 	.eo_card_downbox {
+	 		.eo_card_sotitle {
+	 			text-transform: capitalize;
+	 		}
+	 	}
+		.eo_card_title div span {
+			max-height: 50px;
+			font-size: 13px;
+		}
+		.eo_card_p {
+			display: none;
+		}
+	}
+
+ }
+ // lightbox event from homepage carousel.
+ #homepage_carousel-eoas-full-event-box {
+ 	.eoas_evcal_evdata_img {
+ 		height: 0px!important;
+ 	}
+ 	p {
+ 		color: #F9F9F9;
+ 	}
+ }
+ // in calendar
+ .ajde_evcal_calendar {
+ 	#evcal_head {
+	 	#evcal_cur.evo_month_title  {
+			color: $calendar-highlight!important;
+		}
+ 		.evo_arrows {
+
+ 			#evcal_prev, #evcal_next {
+				background-color: $calendar-highlight;
+ 			}
+ 			#evcal_prev:hover,
+ 			#evcal_next:hover {
+ 				background-color: white;
+ 				color: $calendar-highlight;
+ 			}
+
+ 		}
+ 	}
+ 	#evcal_list.eventon_events_list  {
+	 	.eventon_list_event.event {
+	 		.evo_card_organizer_name_t a:after {
+	 			content: " (website) ";
+	 			color: #1ab5c1;
+	 			font-size: smaller;
+	 			padding-left: 10px;
+	 		}
+	 	}
+	}
+ }
+
+ // event in list (ex: homepage)
+@media only screen and (min-width: 321px) { // everyone EXCEPT smallest phone
+.ajde_evcal_calendar:not(.boxy) {
+	#evcal_list.eventon_events_list .eventon_list_event  {
+		.ev_ftImg { // image
+			width: 100px; // (was 50)
+			background-size: contain;
+		}
+		 .hasFtIMG .evcal_cblock {  // time / clock
+			left: 100px; // was 50
+		}
+		.hasFtIMG .evcal_desc,
+		a.sin_val.hasFtIMG .evcal_desc {
+			padding-left: 170px // was 120
+		}
+	}
+}
+}
