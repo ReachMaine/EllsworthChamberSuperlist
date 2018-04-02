@@ -7,7 +7,7 @@
  */
 require_once(get_stylesheet_directory().'/custom/ecc.php');
 require_once(get_stylesheet_directory().'/custom/language.php');
-
+require_once(get_stylesheet_directory().'/custom/woo.php');
 require_once(get_stylesheet_directory().'/custom/dashboard.php');
 
 /*****  change the login screen logo ****/
