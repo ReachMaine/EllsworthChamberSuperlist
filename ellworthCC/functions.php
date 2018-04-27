@@ -5,10 +5,11 @@
  * @package Superlist Child
  * @since Superlist Child 1.0.0
  */
-require_once(get_stylesheet_directory().'/custom/ecc.php');
+//require_once(get_stylesheet_directory().'/custom/ecc.php');
 require_once(get_stylesheet_directory().'/custom/language.php');
 require_once(get_stylesheet_directory().'/custom/woo.php');
-require_once(get_stylesheet_directory().'/custom/dashboard.php');
+require_once(get_stylesheet_directory().'/custom/custom.php');
+//require_once(get_stylesheet_directory().'/custom/dashboard.php');
 
 /*****  change the login screen logo ****/
 	function my_login_logo() { ?>
