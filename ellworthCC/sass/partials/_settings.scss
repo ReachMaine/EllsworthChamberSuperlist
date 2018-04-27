@@ -74,3 +74,38 @@ b                   { font-weight: bold; }
 .sticky             { }
 .gallery-caption    { }
 .bypostauthor       { }
+
+// normal tags
+h1, h2, h3, h4, h5, h6 {
+		font-family: Poppins,sans-serif;
+		color: #000;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 500px;
+	line-height: 1.3em;
+}
+h1, h2, h3 {
+	margin: 25px 0;
+}
+.post-content h2 {
+	font-size: 36px;
+	margin: 25px 0;
+	font-weight: 500;
+	text-transform: none;
+	color: #000;
+
+}
+
+// icon headline ecc-headline-with-icon
+// 1 - put the <i> tag in the subheadline
+// 2 - then put the class .ecc-headline-with-icon on the SO widget
+.widget_sow-headline {
+	.ecc-headline-with-icon {
+		.sow-headline {
+			margin-bottom: 0px;
+		}
+		.sow-sub-headline {
+			margin-top: -18px;
+		}
+	}
+}

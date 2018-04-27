@@ -86,6 +86,29 @@ b {
 .hidden {
   display: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins,sans-serif;
+  color: #000; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500px;
+  line-height: 1.3em; }
+
+h1, h2, h3 {
+  margin: 25px 0; }
+
+.post-content h2 {
+  font-size: 36px;
+  margin: 25px 0;
+  font-weight: 500;
+  text-transform: none;
+  color: #000; }
+
+.widget_sow-headline .ecc-headline-with-icon .sow-headline {
+  margin-bottom: 0px; }
+.widget_sow-headline .ecc-headline-with-icon .sow-sub-headline {
+  margin-top: -18px; }
+
 .evcal_evdata_img {
   background-repeat: no-repeat;
   background-size: contain; }
@@ -176,6 +199,12 @@ div.eltd-testimonial-content {
 
 div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   height: inherit !important; }
+
+/* styling for woocommerce */
+.product-addon h3.addon-name {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  padding-top: 10px; }
 
 /* **** header ***** */
 .ecc-top-phone {
